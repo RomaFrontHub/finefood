@@ -1,0 +1,241 @@
+$color1: #AFCA0B;
+$color2: #6E4435;
+$color3: #FFF;
+//Offers
+.offers {
+    padding: 260px 100px;
+    margin-bottom: 20px;
+    background: url('../img/offers-back.png');
+    z-index: -1;
+    .offers__all {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .offers__desc {
+            display: flex;
+            flex-direction: column;
+            .offers__caption {
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 61px;
+                text-transform: uppercase;
+                color: $color2;
+                margin-bottom: 27px;
+            }
+            .offers__hr {
+                height: 1px;
+                background: $color1;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            .offers__text {
+                font-size: 16px;
+                line-height: 170%;
+                color: #333;
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+//Services
+.services {
+    padding: 0 100px;
+    margin-bottom: 35px;
+    .services__all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .services__arrow {
+            margin-bottom: 65px;
+        }
+        .services__main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .services__item {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+                border-radius: 5px;
+                padding: 50px 68px;
+                margin-bottom: 65px;
+                width: 30%;
+                .item__caption {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-transform: uppercase;
+                    color: $color2;
+                    margin-bottom: 15px;
+                }
+                .item__hr {
+                    height: 1px;
+                    background: $color1;
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                .item__text {
+                    font-size: 12px;
+                    line-height: 170%;
+                    margin-bottom: 15px;
+                    color: #333;
+                }
+                .item__button {
+                    display: flex;
+                    align-items: center;
+                    a {
+                        span {
+                            color: $color1;
+                            font-size: 12px;
+                            line-height: 160%;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .offers {
+        padding: 260px 50px;
+        margin-bottom: 20px;
+        background: url('../img/offers-back.png');
+        .offers__all {
+            .offers__desc {
+                margin: 0 20px 0 0;
+            }
+            .offers__img {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+    .services {
+        padding: 0 50px;
+        .services__all {
+            .services__main {
+                .services__item {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .offers {
+        padding: 70px 20px 60px 20px;
+        margin-bottom: 20px;
+        background: url('../img/offers-back.png');
+        background-size: cover;
+        .offers__all {
+            .offers__desc {
+                margin: 0 20px 0 0;
+                .offers__caption {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                    line-height: 33px;
+                }
+                .offers__hr {
+                    margin-bottom: 25px;
+                }
+                .offers__text {
+                    max-width: none;
+                }
+            }
+            .offers__img {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+    .services {
+        padding: 0 20px;
+        margin-bottom: 55px;
+        .services__all {
+            .services__arrow {
+                margin-bottom: 35px;
+            }
+            .services__main {
+                flex-wrap: wrap;
+                .services__item {
+                    width: 30%;
+                    margin-bottom: 25px;
+                    padding: 20px;
+                    .item__caption {
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin-bottom: 10px;
+                    }
+                    .item__hr {
+                        margin-bottom: 10px;
+                    }
+                    .item__text {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offers {
+        padding: 70px 20px 60px 20px;
+        margin-bottom: 20px;
+        background: url('../img/offers-back.png');
+        background-size: cover;
+        .offers__all {
+            flex-direction: column;
+            .offers__img {
+                margin-bottom: 70px;
+            }
+            .offers__desc {
+                order: 2;
+                .offers__caption {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                    line-height: 33px;
+                }
+                .offers__hr {
+                    margin-bottom: 25px;
+                }
+                .offers__text {
+                    max-width: none;
+                }
+            }
+        }
+    }
+    .services {
+        padding: 0 20px;
+        margin-bottom: 55px;
+        .services__all {
+            .services__arrow {
+                margin-bottom: 35px;
+            }
+            .services__main {
+                flex-direction: column;
+                .services__item {
+                    margin-bottom: 25px;
+                    padding: 20px;
+                    width: 100%;
+                    .item__caption {
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin-bottom: 10px;
+                    }
+                    .item__hr {
+                        margin-bottom: 10px;
+                    }
+                    .item__text {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
